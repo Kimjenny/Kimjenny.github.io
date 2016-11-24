@@ -1,0 +1,437 @@
+ @media only screen and (max-width: 500px) {
+.body {
+  width: 100%;
+ }
+}
+body {
+	overflow: visible;
+	height: initial;
+	font-family: 'Abel', sans-serif;
+
+}
+
+.mainav {
+	font-size: 24px;
+  font-weight: bold;
+	position: fixed;
+	top: 10%;
+	left: 5%;
+	z-index: 20;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.mainav a {
+    color: #000;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.mainav a:hover {
+    color: #C70606;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.mainav a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 0%;
+    background: #000;
+    transition: all 300ms ease;
+}
+
+.up {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+section {
+	height:1024px;
+}
+.intro {
+	height: 900px;
+	background-color: #fff;
+	background-image: url(../img/me.png);
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.intro article {
+	width: 90%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 15%;
+	left: 5%;
+}
+h1 {
+    font-size: 160px;
+    font-weight: 700;
+    letter-spacing: -10px;
+    text-indent: -10px;
+}
+
+.intro article p {
+    width: 40%;
+    font-size: 18px;
+    line-height: 150%;
+}
+.reel {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+.vid{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.video{
+    margin-top: 120px;
+    width: 80%;
+    margin: 0 auto;
+    display:block;
+}
+
+
+.gallery {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.projects {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.about {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+.contact {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+.typography {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.illustrative {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.photo {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+.layout {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+
+}
+.packaging {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+.live {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+.gallery {
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.website {
+  height: 600px;
+  background-color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+/* Lightbox styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: #C70606;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin: 10px;
+  margin-bottom: 4px;
+  border: 4px solid #DCDCDC;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/* Drop down menu */
+
+.dropbtn {
+	  font-family: 'Abel', sans-serif;
+    padding: 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown {
+    font-size: 16px;
+    position: fixed;
+    display: inline-block;
+    right: 2%;
+    top: 8%;
+    float: right;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: -50px;
+   
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #C70606  ;
+}
+.left {
+	width: 50%;
+	float:left;
+	height: 100%;
+}
+.right {
+	width: 50%;
+	float: right;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

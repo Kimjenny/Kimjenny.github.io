@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Roboto+Condensed" rel="stylesheet">
+
+
+	<!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+
+<body class="body">
+
+
+
+<nav class="mainav">
+	<a href="#" id="home">Home</a>
+	<a href="#" id="showreel">Showreel</a>
+	<a href="#" id="gallery">Gallery</a>
+	<a href="#" id="about">About Me</a>
+</nav>
+<div class="dropdown">
+  <a class="dropbtn" style="font-size:20px; font-weight: bold;">Projects</a>
+  <div class="dropdown-content">
+    <a href="#" id="typography">Typography</a>
+    <a href="#" id="illustrative">Illustrative</a>
+    <a href="#" id="photo">Photo Manipulation</a>
+    <a href="#" id="layout">Layout</a>
+    <a href="#" id="packaging">Packaging</a>
+    <a href="#" id="live">Live Project</a>
+    <a href="#" id="website">Website</a>
+  </div>
+</div>
+
+
+	<section class="intro" id="gohome">
+		<article>
+			<h1 style="line-height:1px; color: #C70606;">Hello.</h1>
+			<p style="margin-bottom:20px;">My name is Kim Wyatt, Welcome to my personal portfolio. I am a<br> graphic designer and specialise in Print and Web developing.</p>
+
+
+		</article>
+	</section>
+
+	<section class="reel" id="goshowreel">
+  <h2 style="text-align:center; line-height:30px; padding-top:150px; font-size:60px; color: #C70606;">Showreel.</h2>
+		<div class="vid">
+  <video controls="controls" class="video" poster="">
+  <source src="video/new1.mov" type="video/mp4"></video>
+</div>
+	</section>
+
+
+
+
+	<section class="gallery" id="gogallery">
+		<div class="row" style="padding-top: 160px;">
+  <div class="column">
+    <img src="img/type1.png" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/broch.png" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/bc.png" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/fresh.png" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/kimtricity.png" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/pitch.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/water.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/kiwi.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="img/type1.png" style="width:100%; ">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="img/broch.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="img/bc.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="img/fresh.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="img/kimtricity.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="img/pitch.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="img/water.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="img/kiwi.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/type1.png" style="width:100%" onclick="currentSlide(1)" alt="Hand Rendered Typography">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/broch.png" style="width:100%" onclick="currentSlide(2)" alt="Two oceans Aquarium Brochure">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/bc.png" style="width:100%" onclick="currentSlide(3)" alt="Business Cards For Band (The Vanilla)>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/fresh.png" style="width:100%" onclick="currentSlide(4)" alt="fRESHPAK packaging Re-design">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="img/kimtricity.png" style="width:100%" onclick="currentSlide(1)" alt="Hand Rendered Typography">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="img/pitch.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pitch Perfect Movie Poster Spoof">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/water.jpg" style="width:100%" onclick="currentSlide(1)" alt="Save Water Poster">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/kiwi.png" style="width:100%" onclick="currentSlide(1)" alt="Photo Manipulation/Kiwi Fruit and Rabbit">
+    </div>
+  </div>
+</div>
+	</section>
+
+
+
+	<section class="about" id="goabout">
+		<article >
+			<div>
+
+          <h2 style="text-align:center; line-height:10px; padding-top:200px; font-size:60px; color: #C70606;">About me.</h2>
+
+          <div style="padding-bottom: 80px; width: 80%; margin: 0 auto; text-align:center;">
+          <img src="img/meimg.jpg">
+
+
+			<p style="line-height: 5px; padding-top:30px;">I'm a 28-years-old. I live in Cape Town, graduated from Friends of Design Academy of Digital Arts.</p> 
+            <p style="text-align:center; line-height: 5px;">I really love what I do. In short, that's me.</p>
+
+            <p style="text-align:center; line-height: 15px;">My skills include Visual Design, User Experience Design, Motion, HTML/CSS, Photoshop and Illustrative Design.</p>
+
+            <h2 style="text-align:center;">Contact Me</h2>
+
+            <p style="text-align:center;"><a href="mailto:kim.jennyw1@gmail.com" style="color:#C70606; font-size:20px; text-decoration:none;">kim.jennyw1@gmail.com</a></p>
+            </div>
+            </div>
+         
+
+
+           
+			
+		</article>
+	</section>
+
+
+		<section class="typography" id="gotypography">
+		<article>
+			
+			
+			<div style="text-align:center;">
+			<img id="myImg" src="img/type1.png" alt="Hand Rendered Typography" width="500" height="500" style="margin-top:180px;">
+      <img id="myImg" src="img/type2.jpg" alt="Hand Rendered Typography" width="500" height="500" style="margin-top:180px;">
+      <img id="myImg" src="img/type3.jpg" alt="Hand Rendered Typography" width="500" height="500" style="margin-top:180px;">
+
+            <p style="padding-left:100px; padding-right:100px;">“Design a typeface inspired by a character from your favourite book, movie or tv series. Your typeface should visually reflect the personality of your chosen character.”</p>
+            
+
+            <p style="margin-left:120px; margin-right:120px;">This hand Rendered typface was inspired by the character Stefan Salvatore, from the Novel and tv series “The Vampire Diaries.” The idea of the oval shaped letters and numbers comes from the “daylight ring” that Stefan Salvatore wears. This is a very important<br> part of the character because without it, he cannot survive. I used the colours red, black, and white. The Red represents the blood, the Black is his dark side, and the White, his good soft side. I used a sort of old style with sharp edges demonstrating danger.</p>
+            </div>
+
+
+		</article>
+	</section>
+
+	<section class="illustrative" id="goillustrative">
+		<article>
+			
+			
+			<div style="text-align:center;">
+			
+
+			<img id="myImg" src="img/kimtricity.png" alt="Graphic Novel Cover" width="500" height="500" style="margin-top:180px;">
+      <img id="myImg" src="img/kimtri.jpg" alt="Graphic Novel Cover" width="500" height="500" style="margin-top:180px;">
+
+
+			<p style="padding-left:80px; padding-right:80px;">
+            “Just imagine being the hero of your own graphic Novel.  Create a cover art for your Novel, it must feature a portrait of yourself and a title that describes your adventure. The style, look and feel is completely up to you but it must be inspired by you.”</p>
+            
+
+            <p style="padding-left:80px; padding-right:80px;">This Graphic Novel Cover, was meant to be myself as a supehero, I chose to do a comic design inspired by the electricity cuts, and load shedding, here in South Africa. “Kimtricity” is a superhero that generates power and saves the city.</p>
+            </div>
+
+
+		</article>
+	</section>
+
+	<section class="photo" id="gophoto">
+		<article>
+			
+			
+			<div style="text-align:center;">
+			
+<img id="myImg" src="img/kiwi.jpg" alt="Kiwi/Rabbit" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/skate.jpg" alt="Roller Skate/Car" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/monster.jpg" alt="monster Poster" width="500" height="500" style="margin-top:180px;">
+
+
+
+			<p style="padding-left:80px; padding-right:80px;">
+            These three images were created using Photoshop for photo manipulation, the first two is Hybrids, I combined the kiwi-fruit with a Rabbit as well as combining a Roller-skate with a car. The third image is a advertisment Poster for the Monster energy drink.</p>
+            
+            </div>
+
+
+		</article>
+	</section>
+
+
+	<section class="layout" id="golayout">
+		<article>
+			
+			
+			<div style="text-align:center; ">
+			
+<img id="myImg" src="img/broch.png" alt="Two Oceans Aquarium Brochure" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/broch2.png" alt="Two Oceans Aquarium Brochure" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/broch3.png" alt="Two Oceans Aquarium Brochure" width="500" height="500" style="margin-top:180px;">
+			<p style="padding-left:80px; padding-right:80px;">
+            With this design, we were tasked to design a brochure that attracts customers. It's not just about an aesthetic that will attract a customer to an exhibition/attractiom/museum but the brochure design can also increase sales to cover the costs of the museum.<br> In the case of a museum brochure, a good museum brochure will influence it's visitors to visit. The design must attract younger and older crowds. The brochure needs to update the brand attraction</p>
+            
+
+            </div>
+
+
+		</article>
+	</section>
+
+
+<section class="packaging" id="gopackaging">
+		<article>
+			
+			
+			<div style="text-align:center;">
+	
+<img id="myImg" src="img/fresh.png" alt="Packaging Re-Design" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/fresh2.jpg" alt="Packaging Re-Design" width="500" height="500" style="margin-top:180px;">
+
+			<p style="padding-left:80px; padding-right:80px;">
+            We were tasked to re-design a well-known South African product. Factors that were considered in the re-design are aesthetic, practicality, cost to produce, target market as well as any existing<br> campaigns that may be running for the product. It should aim to maximize the use of Adobe's Photoshop, Illustrator  and Indesign as well as the understanding of any of the finished art techniques.</p>
+            
+
+            </div>
+
+
+		</article>
+	</section>
+
+	<section class="live" id="golive">
+		<article>
+			
+			
+			<div style="text-align:center;">
+			
+<img id="myImg" src="img/logo.jpg" alt="The Vanilla Logo" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/bc.png" alt="The Vanilla Logo" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/shirt.png" alt="The Vanilla Logo" width="500" height="500" style="margin-top:180px;">
+			
+			<p style="padding-left:80px; padding-right:80px;">
+            With this Project we had to create a Press-Kit for a Local band by the name of "The Vanilla" The above images are a logo I designed, business cards and also a T-shirt.</p>
+            
+
+            </div>
+
+
+		</article>
+	</section>
+
+  
+
+
+    <section class="website" id="gowebsite">
+    <article>
+      
+      
+      <div style="text-align:center;">
+      <h2 style="text-align:center; line-height:5px; padding-top:150px; font-size:60px; color: #C70606;">Websites.</h2>
+
+      <img id="myImg" src="img/bakers1.jpg" alt="Two Oceans Aquarium Brochure" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/menu.jpg" alt="Two Oceans Aquarium Brochure" width="500" height="500" style="margin-top:180px;">
+<img id="myImg" src="img/dashboard.jpg" alt="Two Oceans Aquarium Brochure" width="500" height="500" style="margin-top:180px;">
+
+<p style="padding-bottom:80px;">These are some websites I created, with the Bakers Website we were tasked to re-design a local brand website. The Food website, we had to create a site with an article and blog page.</p>
+
+
+</div>
+
+  
+  
+	
+	
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
